@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Note-Taking Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sections</h2>
+            <input type="text" id="section-name" placeholder="Enter section name">
+            <button onclick="createSection()">Create Section</button>
+            <ul id="sections-list"></ul>
+        </div>
+        <div class="main-content">
+            <h1>My Notes</h1>
+            <div id="notes-container"></div>
+            <textarea id="note-content" placeholder="Write your note here"></textarea>
+            <button onclick="createNote()">Save Note</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
